@@ -1,2 +1,6 @@
 # Hyperparameter-tuning-Regularization
-Hyperparameter tuning Regularization and Optimization In Deep Learning
+* Applying Hyperparametrs correctly is a Itaretive process.
+
+In retro style Neural Network we used as
+Train | Dev | Test
+---|---|---
