@@ -16,4 +16,4 @@ Train set | Dev | Test
 ---|---|---
 60%|20|20
 
-![Bias](...\images\1.png)
+![Bias](.../images/1.png)
