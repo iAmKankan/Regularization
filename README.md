@@ -16,4 +16,4 @@ Train set | Dev | Test
 ---|---|---
 60%|20|20
 
-![Bias](https://github.com/iAmKankan/Hyperparameter-tuning-Regularization/blob/master/images/1.png)
+![Bias](../images/1.png)
