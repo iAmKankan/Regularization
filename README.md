@@ -3,8 +3,8 @@
 
 In retro style Neural Network we used Data in   
 
-Data -|Train set | Dev | Test
----|---|---|
+Data ->|1)Train set |2) Dev/holdon data/cross validation/Development set|3) Test
+--|---|---|--
 
 Train set | Dev | Test
 ---|---|---
