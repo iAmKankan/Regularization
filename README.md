@@ -3,6 +3,8 @@
 
 In retro style Neural Network we used Data in   
 
+Data -->|Train set | Dev | Test
+
 Train set | Dev | Test
 ---|---|---
 70%|30|
