@@ -30,3 +30,5 @@ High Bias:(training data performence) |     1)Bigger Network 2)Train Longer 3) N
 
 High Verience:(Dev set Performence) | 1) More data 2) Regularization 3)NN archetecture search
 ---|---
+
+To achieve the **Low Bias** and **Low Varience**
