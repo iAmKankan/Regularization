@@ -25,5 +25,5 @@ By using any complex classifier like Deep Neural Network or like so we fit the d
 
 
 ## Solution:
-High Bias: |     1)Bigger Network
+High Bias: |     1)Bigger Network    2)Train Longer     3) NN archetecture search
 ---|---
