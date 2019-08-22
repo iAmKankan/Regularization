@@ -25,6 +25,6 @@ By using any complex classifier like Deep Neural Network or like so we fit the d
 
 
 ## Solution:
-High Bias: |ooo 
+High Bias: |     
 ---|---
 00|dffff
