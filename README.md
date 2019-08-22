@@ -22,3 +22,8 @@ Train set | Dev | Test
 If we are using something linear algorithms to fit to a data like logestic regrassion, which is not very good fit; That makes High Bias or Underfitting the data.
 ### High Varience:
 By using any complex classifier like Deep Neural Network or like so we fit the data perfectly thats makes Overfitting the data.
+
+
+## Solution:
+High Bias: |   
+---|---
