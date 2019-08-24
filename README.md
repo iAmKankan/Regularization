@@ -18,6 +18,8 @@ Train set | Dev | Test
 ---|---|---
 60%|20|20
 
+# Bias and Varience:
+
 ![Bias](/images/bias1.png)
 
 ### High Bias:
