@@ -1,6 +1,8 @@
-# Hyperparameter-tuning-Regularization
-* Applying Hyperparametrs correctly is a Itaretive process.
+# Hyperparameters: 
+Model optimization is one of the toughest challenges in the implementation of machine learning solutions. Entire branches of machine learning and deep learning theory have been dedicated to the optimization of models. Typically, we think about model optimization as a process of regularly modifying the code of the model in order to minimize the testing error. However, deep learning optimization often entails fine tuning elements that live outside the model but that can heavily influence its behavior. Deep learning often refers to those hidden elements as hyperparameters as they are one of the most critical components of any machine learning application.
 
+* Applying Hyperparametrs correctly is a Itaretive process.
+# Training The model:
 Data ->|1)Train set |2) Dev/holdon data/cross validation/Development set|3) Test
 --|---|---|--
 
@@ -48,8 +50,9 @@ Below are two examples of configuring the bias-variance trade-off for specific a
 * The support vector machine algorithm has low bias and high variance, but the trade-off can be changed by increasing the C parameter that influences the number of violations of the margin allowed in the training data which increases the bias but decreases the variance.
 
 There is no escaping the relationship between bias and variance in machine learning.
-* Increasing the bias will decrease the variance.
-* Increasing the variance will decrease the bias.
+
+* **Increasing the bias will decrease the variance.**
+* **Increasing the variance will decrease the bias.**
 
 There is a trade-off at play between these two concerns and the algorithms you choose and the way you choose to configure them are finding different balances in this trade-off for your problem.
 
