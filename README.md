@@ -1,6 +1,6 @@
 # Hyperparameters: 
 Model optimization is one of the toughest challenges in the implementation of machine learning solutions. Entire branches of machine learning and deep learning theory have been dedicated to the optimization of models. Typically, we think about model optimization as a process of regularly modifying the code of the model in order to minimize the testing error. However, deep learning optimization often entails fine tuning elements that live outside the model but that can heavily influence its behavior. Deep learning often refers to those hidden elements as hyperparameters as they are one of the most critical components of any machine learning application.   
-Hyperparameters are - **** 1) Learning Rate, 2)  Number of Hidden Units, 3)Convolution Kernel Width **
+Hyperparameters are - **** 1) Learning Rate, 2)  Number of Hidden Units, 3)Convolution Kernel Width ****
 
 * Applying Hyperparametrs correctly is a Itaretive process.
 # Training The model:
