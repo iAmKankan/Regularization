@@ -18,7 +18,7 @@ Train set | Dev | Test
 ---|---|---
 60%|20|20
 
-![Bias](/images/1.png)
+![Bias](/images/bias1.png)
 
 ### High Bias:
 If we are using something linear algorithms to fit to a data like logestic regrassion, which is not very good fit; That makes High Bias or Underfitting the data.
