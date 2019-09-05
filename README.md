@@ -66,6 +66,6 @@ In reality, we cannot calculate the real bias and variance error terms because w
 * Regularization is one of the techniques that can prevent overfitting. 
 * A number of different regularization techniques exist. **Most work by analyzing and potentially modifying the weights of a neural network as it trains.**
 Types of Regularization
-* L1 (Lasso) Regularization
-* L2 (Ridge) Regularization
-* Dropout Regularization
+  * L1 (Lasso) Regularization
+  * L2 (Ridge) Regularization
+  * Dropout Regularization
