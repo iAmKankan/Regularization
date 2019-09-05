@@ -60,3 +60,12 @@ There is no escaping the relationship between bias and variance in machine learn
 There is a trade-off at play between these two concerns and the algorithms you choose and the way you choose to configure them are finding different balances in this trade-off for your problem.
 
 In reality, we cannot calculate the real bias and variance error terms because we do not know the actual underlying target function. Nevertheless, as a framework, bias and variance provide the tools to understand the behavior of machine learning algorithms in the pursuit of predictive performance.
+----
+# Regularization
+* Regularization is a technique that reduces overfitting, which occurs when neural networks attempt to memorize training data, rather than learn from it.
+* Regularization is one of the techniques that can prevent overfitting. 
+* A number of different regularization techniques exist. **Most work by analyzing and potentially modifying the weights of a neural network as it trains.**
+Types of Regularization
+* L1 (Lasso) Regularization
+* L2 (Ridge) Regularization
+* Dropout Regularization
