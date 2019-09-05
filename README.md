@@ -61,6 +61,27 @@ There is a trade-off at play between these two concerns and the algorithms you c
 
 In reality, we cannot calculate the real bias and variance error terms because we do not know the actual underlying target function. Nevertheless, as a framework, bias and variance provide the tools to understand the behavior of machine learning algorithms in the pursuit of predictive performance.
 ----
+## Solution to Overfitting
+Here are couple of options that may be addressed:
+* Reduce the number of features 
+   * Manually select which features to keep
+   * Model selection algorithm
+* Regularization 
+   * Keep all the features, but reduce magnitude/values of model parameters (thetas).
+   * Works well when we have a lot of features, each of which contributes a bit to predicting _y_.
+Regularization works by adding regularization parameter to the cost function:
+![Cost Function](../images/logistic_regression/cost-function-with-regularization.svg)
+
+![regularization parameter](../images/logistic_regression/lambda.svg) - regularization parameter
+
+> Note that you should not regularize the parameter ![theta zero](../images/logistic_regression/theta-0.svg).
+
+In this case the **gradient descent** formula will look like the following:
+
+![Gradient Descent](../images/logistic_regression/gradient-descent-3.svg)
+ 
+
+
 # Regularization
 * Regularization is a technique that reduces overfitting, which occurs when neural networks attempt to memorize training data, rather than learn from it.
 * Regularization is one of the techniques that can prevent overfitting. 
