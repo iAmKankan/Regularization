@@ -65,7 +65,8 @@ In reality, we cannot calculate the real bias and variance error terms because w
 * Regularization is a technique that reduces overfitting, which occurs when neural networks attempt to memorize training data, rather than learn from it.
 * Regularization is one of the techniques that can prevent overfitting. 
 * A number of different regularization techniques exist. **Most work by analyzing and potentially modifying the weights of a neural network as it trains.**
-Types of Regularization
+
+* Types of Regularization
   * L1 (Lasso) Regularization
   * L2 (Ridge) Regularization
   * Dropout Regularization
