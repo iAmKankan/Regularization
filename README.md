@@ -70,15 +70,15 @@ Here are couple of options that may be addressed:
    * Keep all the features, but reduce magnitude/values of model parameters (thetas).
    * Works well when we have a lot of features, each of which contributes a bit to predicting _y_.
 Regularization works by adding regularization parameter to the cost function:
-![Cost Function](../images/logistic_regression/cost-function-with-regularization.svg)
+![Cost Function](https://github.com/iAmKankan/MachineLearning_With_Python/blob/master/images/logistic_regression/cost-function-with-regularization.svg)
 
-![regularization parameter](../images/logistic_regression/lambda.svg) - regularization parameter
+![regularization parameter](https://github.com/iAmKankan/MachineLearning_With_Python/blob/master/images/logistic_regression/lambda.svg) - regularization parameter
 
-> Note that you should not regularize the parameter ![theta zero](../images/logistic_regression/theta-0.svg).
+> Note that you should not regularize the parameter ![theta zero](https://github.com/iAmKankan/MachineLearning_With_Python/blob/master/images/logistic_regression/theta-0.svg).
 
 In this case the **gradient descent** formula will look like the following:
 
-![Gradient Descent](../images/logistic_regression/gradient-descent-3.svg)
+![Gradient Descent](https://github.com/iAmKankan/MachineLearning_With_Python/blob/master/images/logistic_regression/gradient-descent-3.svg)
  
 
 
