@@ -1,3 +1,71 @@
+## Overfitting, Underfitting, and bias-variance trade-off:
+
+
+* Arguably, Machine Learning models have one sole purpose; to generalize well
+* **Generalization is the model’s ability to give sensible outputs to sets of input that it has never seen before.**
+* Normal programs cannot do such a thing, as they can only give outputs “robotically” to the inputs they know.
+* Performance of the model as well as the application as a whole relies heavily on the generalization of the model.
+* **If the model generalizes well, it serves its purpose.**
+* Overfitting and underfitting refer to deficiencies that the model’s performance might suffer from.
+* Finaqlly - "A model that generalizes well is a model that is neither underfit nor overfit."
+
+### Example
+* Linear Regression allows us to map numeric inputs to numeric outputs, fitting a line into the data points. 
+* This line-fitting process is the medium of both overfitting and underfitting.
+* The goal of a Linear Regression is to minimize the cost.
+
+
+### Overfitting:
+* In a Linear Regression When we run our training algorithm on the data set, we allow the overall cost (i.e. distance from each point to the line) to become smaller with more iterations. Leaving this training algorithm run for long leads to minimal overall cost. However, this means that the line will be fit into all the points (including noise), catching secondary patterns that may not be needed for the generalizability of the model.
+
+
+<img src="overfitting.png" alt="drawing" width="300"/>
+
+#### Overfitting is the case where the overall cost is really small, but the generalization of the model is unreliable. This is due to the model learning “too much” from the training data set.
+
+* We always want to find the trend, not fit the line to all the data points. 
+* Overfitting (or high variance) leads to more bad than good.
+* Above mentioned model that has learned very well from the training data but still can’t make reliable predictions for new inputs.
+
+
+
+### Underfitting:
+
+* We want the model to learn from the training data, but we don’t want it to learn too much (i.e. too many patterns). 
+* One solution could be to stop the training earlier. 
+* However, this could lead the model to not learn enough patterns from the training data, **and possibly not even capture the dominant trend.**
+* This case is called underfitting.
+
+<img src="underfitting.png" alt="drawing" width="300"/>
+
+
+#### Underfitting is the case where the model has “ not learned enough” from the training data, resulting in low generalization and unreliable predictions.
+
+* In high bias, the model might not have enough flexibility in terms of line fitting, resulting in a simplistic line that does not generalize well.
+
+## Bias-variance trade-off
+* What is the right measure? Depending on the model at hand, a performance that lies between overfitting and underfitting is more desirable. 
+* This trade-off is the most integral aspect of Machine Learning model training.
+* Machine Learning models fulfill their purpose when they generalize well. 
+* Generalization is bound by the two undesirable outcomes — high bias and high variance.
+
+<img src="tradeoff.png" alt="drawing" width="300"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Hyperparameters: 
 Model optimization is one of the toughest challenges in the implementation of machine learning solutions. Entire branches of machine learning and deep learning theory have been dedicated to the optimization of models. Typically, we think about model optimization as a process of regularly modifying the code of the model in order to minimize the testing error. However, deep learning optimization often entails fine tuning elements that live outside the model but that can heavily influence its behavior. Deep learning often refers to those hidden elements as hyperparameters as they are one of the most critical components of any machine learning application.   
 Hyperparameters are - **1) Learning Rate, 2)  Number of Hidden Units, 3)Convolution Kernel Width**
