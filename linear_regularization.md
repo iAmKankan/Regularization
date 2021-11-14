@@ -49,7 +49,8 @@
  [out] array([1.47012588])
 
 ```
-
+* The penalty hyperparameter sets the type of regularization term to use. 
+* Specifying "l2" indicates that you want SGD to add a regularization term to the cost function equal to half the square of the ℓ2 norm of the weight vector: this is simply Ridge Regression.
 ### References
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 
