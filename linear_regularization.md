@@ -28,5 +28,5 @@
 
 > * The hyperparameter α controls how much you want to regularize the model. 
 > * If α = 0 then Ridge Regression is just Linear Regression. 
-> * If α is very large, then all weights end up very close to zero and the result is a flat line going through the data’s mean
+> * If α is very large, then all weights end up very close to zero and the result is a flat line going through the data’s mean.
 > * Note that the bias term θ0 is not regularized (the sum starts at i = 1, not 0).
