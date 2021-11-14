@@ -72,8 +72,12 @@
  
  [out] array([1.53788174])
 ```
-
-
+### Elastic Net
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+* Elastic Net is a middle ground between Ridge Regression and Lasso Regression. 
+* The regularization term is a **simple mix of both Ridge and Lasso’s regularization terms** and you can control the mix ratio _**r**_. 
+> * When r = 0, Elastic Net is equivalent to Ridge Regression
+> * when r = 1, it is equivalent to Lasso Regression
 ### References
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 
