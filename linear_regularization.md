@@ -39,7 +39,9 @@
  ridge_reg.predict([[1.5]])
  
  [out] array([[1.55071465]])
- 
+ ```
+> ### Using Stochastic Gradient Descent
+```python
  sgd_reg = SGDRegressor(penalty="l2")
  sgd_reg.fit(X, y.ravel())
  sgd_reg.predict([[1.5]])
