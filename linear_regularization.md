@@ -84,7 +84,22 @@
 
 <img src="https://latex.codecogs.com/svg.image?J(\theta)=MSE(\theta)\&space;&plus;\&space;r\alpha\sum_{i=1}^{n}\&space;|\theta_{i}|&space;\&space;&plus;\&space;\frac{1-r}{2}\&space;\alpha\sum_{i=1}^{n}\&space;\theta_{i}^{2}" title="J(\theta)=MSE(\theta)\ +\ r\alpha\sum_{i=1}^{n}\ |\theta_{i}| \ +\ \frac{1-r}{2}\ \alpha\sum_{i=1}^{n}\ \theta_{i}^{2}" />
 
+```python
+ from sklearn.linear_model import ElasticNet
+ elastic_net = ElasticNet(alpha=0.1, l1_ratio=0.5)
+ elastic_net.fit(X, y)
+ elastic_net.predict([[1.5]])
+ [out] array([1.54333232])
+ 
+```
 
+
+### Where to use which one
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+* It is almost always preferable to have at least a little bit of regularization, so generally you should avoid plain Linear Regression. 
+* Ridge is a good default, but if you suspect that only a few features are actually useful, you should prefer Lasso or Elastic Net 
+* Since they tend to reduce the useless features’ weights down to zero as we have discussed. 
+* In general, Elastic Net is preferred over Lasso since Lasso may behave erratically when the **number of features is greater than the number of training instances** or **when several features are strongly correlated.**
 
 
 
