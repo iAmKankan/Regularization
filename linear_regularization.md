@@ -29,4 +29,23 @@
 > * The hyperparameter α controls how much you want to regularize the model. 
 > * If α = 0 then Ridge Regression is just Linear Regression. 
 > * If α is very large, then all weights end up very close to zero and the result is a flat line going through the data’s mean.
-> * Note that the bias term θ0 is not regularized (the sum starts at i = 1, not 0).
+> * Note that the bias term <img src="https://latex.codecogs.com/svg.image?\theta_0" title="\theta_0" /> is not regularized (the sum starts at i = 1, not 0).
+
+> #### Python Code
+```python
+ from sklearn.linear_model import Ridge
+ ridge_reg = Ridge(alpha=1, solver="cholesky")
+ ridge_reg.fit(X, y)
+ ridge_reg.predict([[1.5]])
+array([[1.55071465]])
+ sgd_reg = SGDRegressor(penalty="l2")
+ sgd_reg.fit(X, y.ravel())
+ sgd_reg.predict([[1.5]])
+array([1.47012588])
+
+```
+
+### References
+![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
+
+* [Hands-On-Machine-Learning-with-Scikit-Learn-Keras-and-Tensorflow- O’Reilly-Media-2019](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
