@@ -1,21 +1,26 @@
 ## Index
-![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 
 ## Regularization
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
+* Deep neural networks typically can have several of thousands of parameters. 
+* With so many parameters, the network has an incredible amount of freedom and can fit a huge variety of complex datasets. 
+* But this great flexibility also means that it is prone to overfitting the training set.
 
 * Regularization is a technique that reduces [**Overfitting.**](https://github.com/iAmKankan/MachineLearning_With_Python#overfitting-and-underfitting)
 
-* A number of different regularization techniques exist. **Most work by analyzing and potentially modifying the weights of a neural network as it trains.**
+### Different regularization techniques
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 
-* Types of Regularization
-  * L1 (Lasso) Regularization
-  * L2 (Ridge) Regularization
-  * Dropout Regularization
-  
-  
- ## L1 Regularization (L1 = lasso):
+* One of the best regularization techniques is Early stopping. 
+* Even though Batch Normalization was designed to solve the vanishing/exploding gradients problems, is also acts like a pretty good regularizer.
+* Other popular regularization techniques for neural networks:
+  * **ℓ1 and ℓ2 regularization ( L1 (Lasso) Regularization, L2 (Ridge) Regularization)**
+  * **Dropout** 
+  * **Max-norm regularization.**
+
+
+## L1 Regularization (L1 = lasso):
  
  * The main objective of creating a model(training data) is making sure it fits the data properly and reduce the loss.
  * Sometimes the model that is trained which will fit the data but it may fail and give a poor performance during analyzing of data (test data). This leads to overfitting. Regularization came to overcome overfitting.
