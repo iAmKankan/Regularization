@@ -44,10 +44,5 @@
 ## R square(where to use and where not)
 * R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
 
-## Regularized Linear Models
-* A good way to reduce overfitting is to regularize the model (i.e., to constrain it): the fewer degrees of freedom it has, the harder it will be for it to overfit the data. 
-* For example, a simple way to regularize a polynomial model is to reduce the number of polynomial degrees.
-* For a linear model, regularization is typically achieved by constraining the weights of the model. 
-* We will now look at Ridge Regression, Lasso Regression, and Elastic Net,
-which implement three different ways to constrain the weights.
+
 
