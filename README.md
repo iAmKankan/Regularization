@@ -1,8 +1,12 @@
 ## Index
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 
-# Regularization
-* Regularization is a technique that reduces overfitting, which occurs when neural networks attempt to memorize training data, rather than learn from it.
-* Regularization is one of the techniques that can prevent overfitting. 
+## Regularization
+![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
+
+* Regularization is a technique that reduces [**Overfitting.**](https://github.com/iAmKankan/MachineLearning_With_Python#overfitting-and-underfitting)
+
 * A number of different regularization techniques exist. **Most work by analyzing and potentially modifying the weights of a neural network as it trains.**
 
 * Types of Regularization
