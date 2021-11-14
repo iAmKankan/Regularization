@@ -37,11 +37,14 @@
  ridge_reg = Ridge(alpha=1, solver="cholesky")
  ridge_reg.fit(X, y)
  ridge_reg.predict([[1.5]])
-array([[1.55071465]])
+ 
+ [out] array([[1.55071465]])
+ 
  sgd_reg = SGDRegressor(penalty="l2")
  sgd_reg.fit(X, y.ravel())
  sgd_reg.predict([[1.5]])
-array([1.47012588])
+ 
+ [out] array([1.47012588])
 
 ```
 
