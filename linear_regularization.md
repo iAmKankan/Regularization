@@ -1,5 +1,12 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
+* [Regularized Linear Models](#regularized-linear-models)
+* [Ridge Regression](#ridge-regression)
+* [Lasso Regression](#lasso-regression)
+* [Elastic Net](#elastic-net)
+* [When to choose which](#when-to-choose-which)
+* [Early Stopping](#early-stopping)
+* [References](#references)
 
 ## Regularized Linear Models
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
@@ -22,7 +29,7 @@
 * Note that the regularization term should only be added to the cost function during training. 
 * Once the model is trained, you want to evaluate the model’s performance using the unregularized performance measure.
 
-#### Ridge Regression cost function
+#### Cost function
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 <img src="https://latex.codecogs.com/svg.image?J(\theta)=MSE(\theta)\&space;&plus;\&space;\alpha\sum_{i=1}^{n}\&space;\theta^{2}_{i}" title="J(\theta)=MSE(\theta)\ +\ \alpha\sum_{i=1}^{n}\ \theta^{2}_{i}" />
 
@@ -56,7 +63,7 @@
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 * Just like Ridge Regression, it adds a regularization term to the cost function, but it uses the ℓ1 norm of the weight vector instead of half the square of the ℓ2 norm.
  
-#### Lasso Regression cost function
+#### Cost function
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 <img src="https://latex.codecogs.com/svg.image?J(\theta)=MSE(\theta)\&space;&plus;\&space;\alpha\sum_{i=1}^{n}\&space;|\theta_{i}|" title="J(\theta)=MSE(\theta)\ +\ \alpha\sum_{i=1}^{n}\ |\theta_{i}|" />
 
@@ -94,7 +101,7 @@
 ```
 
 
-### Where to use which one
+### When to choose which
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 * It is almost always preferable to have at least a little bit of regularization, so generally you should avoid plain Linear Regression. 
 * Ridge is a good default, but if you suspect that only a few features are actually useful, you should prefer Lasso or Elastic Net 
