@@ -12,6 +12,7 @@
 > * **Lasso Regression**
 > * **Elastic Net**
 
+> #### It is important to scale the data (e.g., using a StandardScaler) before performing **Ridge Regression**, **Lasso Regression** as it is sensitive to the scale of the input features. This is true of most regularized models.
 
 ### Ridge Regression
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
@@ -20,8 +21,12 @@
 * This forces the learning algorithm to not only fit the data but also keep the model weights as small as possible.
 * Note that the regularization term should only be added to the cost function during training. 
 * Once the model is trained, you want to evaluate the model’s performance using the unregularized performance measure.
-> #### It is important to scale the data (e.g., using a StandardScaler) before performing Ridge Regression, as it is sensitive to the scale of the input features. This is true of most regularized models.
+
 #### Ridge Regression cost function
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 <img src="https://latex.codecogs.com/svg.image?J(\theta)=MSE(\theta)\&space;&plus;\&space;\alpha\sum_{i=1}^{n}\&space;\theta^{2}_{i}" title="J(\theta)=MSE(\theta)\ +\ \alpha\sum_{i=1}^{n}\ \theta^{2}_{i}" />
 
+> * The hyperparameter α controls how much you want to regularize the model. 
+> * If α = 0 then Ridge Regression is just Linear Regression. 
+> * If α is very large, then all weights end up very close to zero and the result is a flat line going through the data’s mean
+> * Note that the bias term θ0 is not regularized (the sum starts at i = 1, not 0).
