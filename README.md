@@ -1,5 +1,12 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
+* [Linear Regularization](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md)
+  * [Regularized Linear Models](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#regularized-linear-models)
+  * [Ridge Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#ridge-regression)
+  * [Lasso Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#lasso-regression)
+  * [Elastic Net](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#elastic-net)
+  * [When to choose which](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#when-to-choose-which)
+  * [Early Stopping](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#early-stopping)
 
 ## Regularization
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
