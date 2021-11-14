@@ -102,7 +102,13 @@
 * In general, Elastic Net is preferred over Lasso since Lasso may behave erratically when the **number of features is greater than the number of training instances** or **when several features are strongly correlated.**
 
 
+### Early Stopping
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+> #### Early Stopping is a very different way to regularize iterative learning algorithms such as Gradient Descent is to stop training as soon as the validation error reaches a minimum.
 
+* With **Stochastic** and **Mini-batch Gradient Descent**, the curves are not so smooth, and it may be hard to know whether you have reached the minimum or not. 
+* One solution is to stop only after the validation error has been above the minimum for some time (when you are confident that the model will not do any better), then roll
+back the model parameters to the point where the validation error was at a minimum.
 
 
 
