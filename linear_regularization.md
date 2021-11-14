@@ -77,7 +77,22 @@
 * Elastic Net is a middle ground between Ridge Regression and Lasso Regression. 
 * The regularization term is a **simple mix of both Ridge and Lasso’s regularization terms** and you can control the mix ratio _**r**_. 
 > * When r = 0, Elastic Net is equivalent to Ridge Regression
-> * when r = 1, it is equivalent to Lasso Regression
+> * When r = 1, it is equivalent to Lasso Regression
+
+#### Cost Function
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+
+<img src="https://latex.codecogs.com/svg.image?J(\theta)=MSE(\theta)\&space;&plus;\&space;r\alpha\sum_{i=1}^{n}\&space;|\theta_{i}|&space;\&space;&plus;\&space;\frac{1-r}{2}\&space;\alpha\sum_{i=1}^{n}\&space;\theta_{i}^{2}" title="J(\theta)=MSE(\theta)\ +\ r\alpha\sum_{i=1}^{n}\ |\theta_{i}| \ +\ \frac{1-r}{2}\ \alpha\sum_{i=1}^{n}\ \theta_{i}^{2}" />
+
+
+
+
+
+
+
+
+
+
 ### References
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 
