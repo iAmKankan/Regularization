@@ -51,6 +51,30 @@
 ```
 * The penalty hyperparameter sets the type of regularization term to use. 
 * Specifying "l2" indicates that you want SGD to add a regularization term to the cost function equal to half the square of the ℓ2 norm of the weight vector: this is simply Ridge Regression.
+
+### Lasso Regression
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+* Least Absolute Shrinkage and Selection Operator Regression (simply called Lasso Regression) is another regularized version of Linear Regression:
+* Just like Ridge Regression, it adds a regularization term to the cost function, but it uses the ℓ1 norm of the weight vector instead of half the square of the ℓ2 norm.
+ 
+#### Lasso Regression cost function
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+<img src="https://latex.codecogs.com/svg.image?J(\theta)=MSE(\theta)\&space;&plus;\&space;\alpha\sum_{i=1}^{n}\&space;|\theta_{i}|" title="J(\theta)=MSE(\theta)\ +\ \alpha\sum_{i=1}^{n}\ |\theta_{i}|" />
+
+> #### An important characteristic of Lasso Regression is that it tends to completely eliminate the weights of the least important features (i.e., set them to zero).
+> #### Lasso Regression automatically performs feature selection and outputs a sparse model (i.e., with few nonzero feature weights).
+
+> ### Python Code
+```python
+ from sklearn.linear_model import Lasso
+ lasso_reg = Lasso(alpha=0.1)
+ lasso_reg.fit(X, y)
+ lasso_reg.predict([[1.5]])
+ 
+ [out] array([1.53788174])
+```
+
+
 ### References
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 
