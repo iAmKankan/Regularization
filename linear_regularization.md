@@ -1,10 +1,10 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 * [Regularized Linear Models](#regularized-linear-models)
-* [Ridge Regression](#ridge-regression)
-* [Lasso Regression](#lasso-regression)
-* [Elastic Net](#elastic-net)
-* [When to choose which](#when-to-choose-which)
+  * [Ridge Regression](#ridge-regression)
+  * [Lasso Regression](#lasso-regression)
+  * [Elastic Net](#elastic-net)
+  * [When to choose which](#when-to-choose-which)
 * [Early Stopping](#early-stopping)
 * [References](#references)
 
@@ -110,7 +110,7 @@
 
 
 ### Early Stopping
-![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 > #### Early Stopping is a very different way to regularize iterative learning algorithms such as Gradient Descent is to stop training as soon as the validation error reaches a minimum.
 
 * With **Stochastic** and **Mini-batch Gradient Descent**, the curves are not so smooth, and it may be hard to know whether you have reached the minimum or not. 
