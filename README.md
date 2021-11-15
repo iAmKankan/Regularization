@@ -22,7 +22,7 @@
 * One of the best regularization techniques is Early stopping. 
 * Even though Batch Normalization was designed to solve the vanishing/exploding gradients problems, is also acts like a pretty good regularizer.
 * Other popular regularization techniques for neural networks:
-  * **ℓ1 and ℓ2 regularization ( L1 (Lasso) Regularization, L2 (Ridge) Regularization)**
+  * **ℓ1 and ℓ2 regularization ( L1 (Lasso) Regularization, L2 (Ridge) Regularization)** Based on [**norms**](https://github.com/iAmKankan/Mathematics/blob/main/norm.md)
   * **Dropout** 
   * **Max-norm regularization.**
 
@@ -105,4 +105,4 @@ you create a thin wrapper for any callable, with some default argument values. F
 * R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
 
 
-
+## References
