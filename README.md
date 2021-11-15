@@ -6,7 +6,7 @@
   * [Lasso Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#lasso-regression)
   * [Elastic Net](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#elastic-net)
   * [When to choose which](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#when-to-choose-which)
-  * [Early Stopping](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#early-stopping)
+* [Early Stopping](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#early-stopping)
 
 ## Regularization
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
@@ -25,6 +25,59 @@
   * **ℓ1 and ℓ2 regularization ( L1 (Lasso) Regularization, L2 (Ridge) Regularization)**
   * **Dropout** 
   * **Max-norm regularization.**
+
+### ℓ1 and ℓ2 Regularization
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+* We can use ℓ1 and ℓ2 regularization to constrain a neural network’s connection weights (but typically not its biases).
+> #### Apply ℓ2 regularization to a Keras layer’s connection weights, using a regularization factor of 0.01:
+```python
+layer = keras.layers.Dense(100, activation="elu", 
+                           kernel_initializer="he_normal", 
+                           kernel_regularizer=keras.regularizers.l2(0.01))
+                         
+```
+
+* The l2() function returns a regularizer that will be called to compute the regularization loss, at each step during training. 
+* This regularization loss is then added to the final loss. 
+
+* You can just use **keras.regularizers.l1()** if you want ℓ1 regularization, and if you want both ℓ1 and ℓ2 regularization, use _**keras.regu
+larizers.l1_l2()**_ (specifying both regularization factors).
+
+```python
+from functools import partial
+RegularizedDense = partial(keras.layers.Dense,
+                          activation="elu",
+                          kernel_initializer="he_normal",
+                          kernel_regularizer=keras.regularizers.l2(0.01))
+model = keras.models.Sequential([
+                     keras.layers.Flatten(input_shape=[28, 28]),
+                     RegularizedDense(300),
+                     RegularizedDense(100),
+                     RegularizedDense(10, activation="softmax",
+                     kernel_initializer="glorot_uniform")
+```
+ 
+> Since you will typically want to apply the same regularizer to all layers in your network,
+as well as the same activation function and the same initialization strategy in all
+hidden layers, you may find yourself repeating the same arguments over and over.
+This makes it ugly and error-prone. To avoid this, you can try refactoring your code
+to use loops. Another option is to use Python’s _**functools.partial()**_ function: it lets
+you create a thin wrapper for any callable, with some default argument values. For
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## L1 Regularization (L1 = lasso):
