@@ -10,18 +10,17 @@
 
 ## Regularized Linear Models
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
-
 * A good way to reduce overfitting is to regularize the model (i.e., to constrain it): the fewer degrees of freedom it has, the harder it will be for it to overfit the data. 
 * **For example**, a simple way to regularize a polynomial model is to reduce the number of polynomial degrees.
 * For a linear model, regularization is typically achieved by **constraining the weights** of the model. 
 > #### Regularized Linear Models to implement three different ways to constrain the weights:
-> * **Ridge Regression**
-> * **Lasso Regression**
-> * **Elastic Net**
+> * **_Ridge Regression_**
+> * **_Lasso Regression_**
+> * **_Elastic Net_**
 
 > #### It is important to scale the data (e.g., using a StandardScaler) before performing **Ridge Regression**, **Lasso Regression** as it is sensitive to the scale of the input features. This is true of most regularized models.
 
-### Ridge Regression
+### _Ridge Regression_
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 * Ridge Regression (also called Tikhonov regularization) is a regularized version of Linear Regression: 
 * A regularization term equal to <img src="https://latex.codecogs.com/svg.image?\alpha\sum_{i=1}^{n}\&space;\theta^{2}_{i}" title="\alpha\sum_{i=1}^{n}\ \theta^{2}_{i}" /> is added to the cost function.
@@ -59,7 +58,7 @@
 * The penalty hyperparameter sets the type of regularization term to use. 
 * Specifying "l2" indicates that you want SGD to add a regularization term to the cost function equal to half the square of the ℓ2 norm of the weight vector: this is simply Ridge Regression.
 
-### Lasso Regression
+### _Lasso Regression_
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 * Just like Ridge Regression, it adds a regularization term to the cost function, but it uses the ℓ1 norm of the weight vector instead of half the square of the ℓ2 norm.
  
@@ -79,7 +78,7 @@
  
  [out] array([1.53788174])
 ```
-### Elastic Net
+### _Elastic Net_
 ![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
 * Elastic Net is a middle ground between Ridge Regression and Lasso Regression. 
 * The regularization term is a **simple mix of both Ridge and Lasso’s regularization terms** and you can control the mix ratio _**r**_. 
