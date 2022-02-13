@@ -1,30 +1,22 @@
 ## Index
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
-* [Regularization](https://github.com/iAmKankan/Regularization#regularization)
-* [Different regularization techniques](https://github.com/iAmKankan/Regularization#different-regularization-techniques)
-* ℓ1 and ℓ2 Regularization
-https://github.com/iAmKankan/Regularization#%E2%84%931-and-%E2%84%932-regularization
-Dropout
-https://github.com/iAmKankan/Regularization#dropout
-Monte-Carlo (MC) Dropout
-https://github.com/iAmKankan/Regularization#monte-carlo-mc-dropout
-Max-Norm Regularization
-https://github.com/iAmKankan/Regularization#max-norm-regularization
-Summary and Practical Guidelines
-https://github.com/iAmKankan/Regularization#summary-and-practical-guidelines
-L1 Regularization (L1 = lasso):
-https://github.com/iAmKankan/Regularization#l1-regularization-l1--lasso
-L2 Regularization(L2 = Ridge Regression):
-https://github.com/iAmKankan/Regularization#l2-regularizationl2--ridge-regression
-R square(where to use and where not)
-https://github.com/iAmKankan/Regularization#r-squarewhere-to-use-and-where-not
+* [Regularization](#regularization)
+* [Different regularization techniques](#different-regularization-techniques)
+* [ℓ1 and ℓ2 Regularization](#%E2%84%931-and-%E2%84%932-regularization)
+* [Dropout](#dropout)
+* [Monte-Carlo (MC) Dropout](#monte-carlo-mc-dropout)
+* [Max-Norm Regularization](#max-norm-regularization)
+* [Summary and Practical Guidelines](#summary-and-practical-guidelines)
+* [L1 Regularization (L1 = lasso)](#l1-regularization-l1--lasso)
+* [L2 Regularization(L2 = Ridge Regression)](#l2-regularizationl2--ridge-regression)
+* [R square(where to use and where not)](#r-squarewhere-to-use-and-where-not)
 * [Linear Regularization](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md)
   * [Regularized Linear Models](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#regularized-linear-models)
   * [Ridge Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#ridge-regression)
   * [Lasso Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#lasso-regression)
   * [Elastic Net](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#elastic-net)
   * [When to choose which](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#when-to-choose-which)
-* [Early Stopping](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#early-stopping)
+* [Early Stopping](#early-stopping)
 
 ## Regularization
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
