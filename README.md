@@ -136,7 +136,7 @@ you create a thin wrapper for any callable, with some default argument values. F
    * For a model that’s more tolerant of different lighting conditions, you can similarly generate many images with various contrasts. 
 * In general, you can also **flip the pictures horizontally** (except for text, and other asymmetrical objects). 
 * By combining these transformations, you can greatly increase the size of your training set.
-
+* [Text Augmentation](https://github.com/iAmKankan/Research-and-development/blob/main/Text_Augmentation/README.md) 
 ## References
 * [Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow, 2nd Edition](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
 * MATHEMATICS FOR MACHINE LEARNING by Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong
