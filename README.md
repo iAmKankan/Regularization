@@ -10,7 +10,8 @@
   * [L1 Regularization (L1 = lasso)](#l1-regularization-l1--lasso)
   * [L2 Regularization(L2 = Ridge Regression)](#l2-regularizationl2--ridge-regression)
   * [R square(where to use and where not)](#r-squarewhere-to-use-and-where-not)
-  * [Data Augmentation or Training Set Expansion](url)
+  * [Data Augmentation or Training Set Expansion](#data-augmentation-or-training-set-expansion)
+    * [Text Augmentation](https://github.com/iAmKankan/Research-and-development/blob/main/Text_Augmentation/README.md) 
 * [Linear Regularization](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md)
   * [Regularized Linear Models](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#regularized-linear-models)
   * [Ridge Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#ridge-regression)
@@ -124,5 +125,16 @@ you create a thin wrapper for any callable, with some default argument values. F
 ## R square(where to use and where not)
 * R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
 ## Data Augmentation or Training Set Expansion
+![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
+* Data augmentation artificially increases the size of the training set by generating many **realistic variants** of each training instance. 
+* This **reduces overfitting**, making this a _regularization technique_. 
+* The generated instances should be as **realistic** as possible: 
+   * ideally, given an image from the augmented training set, a human should not be able to tell whether it was augmented or not. 
+* Simply adding **white noise will not help**; the modifications should be learnable (white noise is not). 
+* **For example**, you can slightly **shift**, **rotate** and **resize** every picture in the training set by various amounts and add the resulting pictures to the training set.
+   * This forces the model to be more **tolerant** to **variations** in the **position**, **orientation** and **size of the objects** in the pictures. 
+   * For a model that’s more tolerant of different lighting conditions, you can similarly generate many images with various contrasts. 
+* In general, you can also **flip the pictures horizontally** (except for text, and other asymmetrical objects). 
+* By combining these transformations, you can greatly increase the size of your training set.
 
 ## References
