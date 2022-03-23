@@ -10,6 +10,7 @@
   * [L1 Regularization (L1 = lasso)](#l1-regularization-l1--lasso)
   * [L2 Regularization(L2 = Ridge Regression)](#l2-regularizationl2--ridge-regression)
   * [R square(where to use and where not)](#r-squarewhere-to-use-and-where-not)
+  * [Data Augmentation or Training Set Expansion](url)
 * [Linear Regularization](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md)
   * [Regularized Linear Models](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#regularized-linear-models)
   * [Ridge Regression](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md#ridge-regression)
@@ -23,7 +24,6 @@
 * Deep neural networks typically can have several of thousands of parameters. 
 * With so many parameters, the network has an incredible amount of freedom and can fit a huge variety of complex datasets. 
 * But this great flexibility also means that it is prone to overfitting the training set.
-
 * Regularization is a technique that reduces [**Overfitting.**](https://github.com/iAmKankan/MachineLearning_With_Python#overfitting-and-underfitting)
 
 ### Different regularization techniques
@@ -123,6 +123,6 @@ you create a thin wrapper for any callable, with some default argument values. F
 
 ## R square(where to use and where not)
 * R-squared is a statistical measure of how close the data are to the fitted regression line. It is also known as the coefficient of determination, or the coefficient of multiple determination for multiple regression.
-
+## Data Augmentation or Training Set Expansion
 
 ## References
