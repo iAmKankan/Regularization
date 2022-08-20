@@ -33,7 +33,7 @@
 * One of the best regularization techniques is Early stopping. 
 * Even though Batch Normalization was designed to solve the vanishing/exploding gradients problems, is also acts like a pretty good regularizer.
 * Other popular regularization techniques for neural networks:
-  * **ℓ1 and ℓ2 regularization ( [L1 (Lasso Regression), L2 (Ridge Regression)](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md))**. Based on [**norms**](https://github.com/iAmKankan/Mathematics/blob/main/norm.md)
+  * **ℓ1 and ℓ2 regularization ( [L1 (Lasso Regression), L2 (Ridge Regression)](https://github.com/iAmKankan/Regularization/blob/master/linear_regularization.md))**. Based on [**norms**](https://github.com/iAmKankan/Mathematics/blob/main/LinearAlgebra/norms.md)
   * **Dropout** 
   * **Max-norm regularization.**
 
