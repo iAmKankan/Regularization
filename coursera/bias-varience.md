@@ -23,9 +23,9 @@ $\large{\color{Purple}\textit{l'heure}}$
 
 Let's say the data set that looks like this. 
 
-$\Large\textrm{Left most: }$ If you fit a straight line to the data, maybe get a **logistic regression** fit to that. This is not a very good fit to the data. And so this is class of a **high bias**, what we say that this is **underfitting the data**. 
+$\Large\textrm{Left most pic: }$ If you fit a straight line to the data, maybe get a **logistic regression** fit to that. This is not a very good fit to the data. And so this is class of a **high bias**, what we say that this is **underfitting the data**. 
 
-$\Large\textrm{Right most : }$
+$\Large\textrm{Right most pic: }$
 On the opposite end, if you fit an incredibly complex classifier, maybe deep neural network, or neural network with all the hidden units, maybe you can fit the data perfectly, but that doesn't look like a great fit either. So there's a classifier of high variance and this is **overfitting the data**. 
 
 And there might be some classifier in between, with a medium level of complexity, that maybe fits it correctly like that. That looks like a much more reasonable fit to the data, so we call that just right. It's somewhere in between. 
@@ -59,12 +59,35 @@ $\large{\color{Purple}\textit{Example \\#3: }}$ Now, here's another example. Let
 
 So this has really the worst of both worlds.
 
-$\large{\color{Purple}\textit{Example \\#4: }}$If you have **0.5** **training set error**, and **1% dev set error**.
+$\large{\color{Purple}\textit{Example \\#4: }}$ If you have **0.5** **training set error**, and **1% dev set error**.
 * That you have a **cat classifier** with only **1%**, than just we have **low bias** and **low variance**. 
 
-This analysis is predicated on the assumption, that human level performance gets nearly **0%** error or, more generally, that the **optimal error**, sometimes called **base error**, so the **base in optimal error is nearly 0%**. 
+This analysis is predicated on the assumption, that human level performance gets nearly **0%** error or, more generally, that the **optimal error**, sometimes called **bayes error**, so the **bayesian optimal error nearly 0%**. 
 
-If the **optimal error** or the **base error** were much higher, say, it were **15%**, then if you look at this **classifier**, **15%** is actually perfectly reasonable for training set and you wouldn't see it as **high bias** and also a **pretty low variance**. 
+If the **optimal error** or the **bayes error** were much higher, say, it were **15%**, then if you look at this **classifier**, **15%** is actually perfectly reasonable for training set and you wouldn't see it as **high bias** and also a **pretty low variance**. 
+
+$\Large\underline{\textrm{High Bias and High Variance: }}$
+#### What does high bias and high variance looks like? 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/220582688-939a201c-4be8-4ab9-872e-e65d6abb26cf.png" width=40%/>
+  <img src="https://user-images.githubusercontent.com/12748752/220583220-299c3496-12da-42b3-8459-045fa7b1ff99.png" width=40%/>
+  <br>
+  <ins><b>     Bias / Variance with Example </b></ins>
+</p>
+
+This is kind of the worst of both worlds. 
+* **Left:** A classifier like this, then your classifier has high bias, because it **underfits** the data. So this would be a classifier that is mostly linear and therefore **underfits** the data, we're drawing this is purple. 
+* But if somehow your classifier does some weird things, then it is actually **overfitting** parts of the data as well. 
+* So the classifier that I drew in purple, has both **high bias** and **high variance**.
+
+Where it has high bias, because, by being a mostly linear classifier, is just not fitting. You know, this quadratic line shape that well, but by having too much flexibility in the middle, it somehow gets this example, and this example overfits those two examples as well. 
+
+* So this classifier kind of has **high bias** because it was **mostly linear**, but you need maybe a **curve function** or **quadratic function**.
+* And it has **high variance**, because it had too much **flexibility to fit those two mislabel**, or those live examples in the middle as well. 
+
+In case this seems contrived, well, this example is a little bit contrived in two dimensions, but with very high dimensional inputs. You actually do get things with high bias in some regions and high variance in some regions, and so it is possible to get classifiers like this in high dimensional inputs that seem less contrived.
 
 
-So the case of how to analyze bias and variance, when no classifier can do very well, for example, if you have really blurry images, so that even a human or just no system could possibly do very well, then maybe base error is much higher, and then there are some details of how this analysis will change. But leaving aside this subtlety for now, the takeaway is that by looking at your training set error you can get a sense of how well you are fitting, at least the training data, and so that tells you if you have a bias problem. And then looking at how much higher your error goes, when you go from the training set to the dev set, that should give you a sense of how bad is the variance problem, so you'll be doing a good job generalizing from a training set to the dev set, that gives you sense of your variance. All this is under the assumption that the base error is quite small and that your training and your dev sets are drawn from the same distribution. If those assumptions are violated, there's a more sophisticated analysis you could do, which we'll talk about in the later video.
+
+
