@@ -55,7 +55,7 @@ If you use **L1 regularization**, then w will end up being **sparse**. And what 
 
 $\Large{\color{Purple}\underline{\textbf{Neural Network: }}}$
 
-$$ \Huge{\color{Purple}\mathrm{J(w^{(1)},b^{(1)}, \cdots,w^{(\mathit{l})},b^{(\mathit{l})}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{(i)},y^{(i)})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l}}^L \parallel w^{(\mathit{l})} \parallel^2}}$$
+$$ \Huge{\color{Purple}\mathrm{J(w^{(1)},b^{(1)}, \cdots,w^{(\mathit{L})},b^{(\mathit{L})}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{(i)},y^{(i)})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l}}^L \parallel w^{(\mathit{l})} \parallel^2}}$$
 
 $\large{\color{Purple}\textrm{Frobenius norm (Matrix norm)}}$ [link ↗️](https://github.com/iAmKankan/Mathematics/blob/main/LinearAlgebra/norms.md#frobenius-norm) 
 
@@ -69,3 +69,6 @@ $${\color{Purple}
 &\bullet \textrm{whereas the columns "j" of the weight matrix should equal the number of neurons in the previous layer } n^{(\mathit{l-1})} \\
 \end{align}
 }$$
+
+
+
