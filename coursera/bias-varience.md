@@ -73,7 +73,7 @@ $\Large\underline{\textrm{High Bias and High Variance: }}$
   <img src="https://user-images.githubusercontent.com/12748752/220582688-939a201c-4be8-4ab9-872e-e65d6abb26cf.png" width=40%/>
   <img src="https://user-images.githubusercontent.com/12748752/220583220-299c3496-12da-42b3-8459-045fa7b1ff99.png" width=40%/>
   <br>
-  <ins><b>     Bias / Variance with Example </b></ins>
+  <ins><b>     High Bias(left)    |   High Bias High Variance(right) </b></ins>
 </p>
 
 This is kind of the worst of both worlds. 
