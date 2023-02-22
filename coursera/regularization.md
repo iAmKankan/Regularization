@@ -82,12 +82,20 @@ $\Large{\color{Purple}\underline{\textbf{Backpropagation: }}}$
 
 $$\Huge{\color{Purple}\mathrm{dw^{[\mathit{l}]} = (\textit{from backprop})}}$$
 
-* Backprop would give us the **partial derivative** of $\large{\color{Purple}\textrm{J}}$ with respect to $\large{\color{Purple}\textrm{w}}$ or really $\large{\color{Purple}\textrm{w}}$ for any given $\large{\color{Purple}\textrm{[l]}}$ . Looka like - $\large{\color{Purple}\frac{\partial J}{\partial w^{[l]}}}$
+* Backprop would give us the **partial derivative** of $\large{\color{Purple}\textrm{J}}$ with respect to $\large{\color{Purple}\textrm{w}}$ or really $\large{\color{Purple}\textrm{w}}$ for any given $\large{\color{Purple}\textrm{[l]}}$ . Looks like - $\large{\color{Purple}\frac{\partial J}{\partial w^{[l]}}}$
 
 $$\Huge{\color{Purple}\mathrm{w^{[\mathit{l}]} := \mathrm{w^{[\mathit{l}]}} - \eta \ {dw}^{[\mathit{l}]} }}$$
 
 * And then you update w[l], as w[l]- the learning rate times d. So this is before we added this extra **regularization** term to the objective. 
 * Now that we've added this **regularization** term to the objective, what you do is you take **dw** and you add to it, lambda/m times w.
-*  And then you just compute this update, same as before. 
-*  And it turns out that with this new definition of dw[l], this new dw[l] is still a correct definition of the derivative of your cost function, with respect to your parameters, now that you've added the extra **regularization** term at the end.
 
+$$\Huge{\color{Purple}\mathrm{dw^{[\mathit{l}]} = (\textit{from backprop})}} {\color{Cyan} + \frac{\lambda}{m} w^{[l]}}$$
+
+*  And then you just compute this update, same as before. 
+*  And it turns out that with this new definition of dw[l], this new dw[l] is still a correct definition of the derivative of your cost function, with respect to your parameters, now that you've added the extra **regularization** term at the end.**
+* $\large{\color{Purple}\frac{\partial J}{\partial w^{[l]}}}{\color{Cyan}dw^{[l]} }$
+
+And it's for this reason that L2 regularization is sometimes also called weight decay. So if I take this definition of dw[l] and just plug it in here, then you see that the update is w[l] = w[l] times the learning rate alpha times the thing from backprop, +lambda of m times w[l].
+
+$\large{\color{Purple}\textit{Weight Decay \\# : }}$
+So this is why L2 norm regularization is also called weight decay. Because it's just like the ordinally gradient descent, where you update w by subtracting alpha times the original gradient you got from backprop. But now you're also multiplying w by this thing, which is a little bit less than 1. So the alternative name for L2 regularization is weight decay. I'm not really going to use that name, but the intuition for it's called weight decay is that this first term here, is equal to this. So you're just multiplying the weight metrics by a number slightly less than 1. So that's how you implement L2 regularization in neural network.
