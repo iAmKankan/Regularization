@@ -59,7 +59,7 @@ $\Large{\color{Purple}\underline{\textbf{Neural Network: }}}$ In a **neural netw
 *  And says at **regularization**, you add $\large{\color{Purple} \lambda / 2m}$  of sum over all of your parameters $\large{\color{Purple} w}$, 
 * your parameter matrix is $\large{\color{Purple} w}$, of their, that's called the **squared norm**. 
 * Where this $\large{\color{Purple} \parallel w^{(l)} \parallel^2}$ **norm of a matrix**, meaning the **squared norm** is defined as the $\large{\color{Purple} L}$,  **sum of j**, of each of the elements of that matrix, **squared**. 
-* And if you want the indices of this summation. This is sum from i=1 through n[l]. Sum from j=1 through n[l-1], because $\large{\color{Purple} w}$ is $\large{\color{Purple} w: ( n^{l} ,n^{l-1})}$ dimensional matrix, where $\large{\color{Purple} n^{l} ,n^{l-1} }$ these are the number of Hidden units in layers [l-1] in layer l.
+* And if you want the indices of this summation. This is sum from i=1 through n[l]. Sum from j=1 through n[l-1], because $\large{\color{Purple} w}$ is $\large{\color{Purple} w: ( n^{l} ,n^{l-1})}$ dimensional matrix, where $\large{\color{Purple} n^{l} ,n^{l-1} }$ these are the number of Hidden units in layers $\large{\color{Purple}[l-1]}$ in layer $\large{\color{Purple}l}$.
 
 So this **matrix norm**, it turns out is called the **Frobenius norm** of the matrix, denoted with a **F** in the subscript. $\large{\color{Purple}\parallel w \parallel^2_{F}}$ or $\large{\color{Purple}\parallel \dot{} \parallel_{F}^2}$
 
