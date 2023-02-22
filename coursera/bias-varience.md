@@ -90,6 +90,13 @@ In case this seems contrived, well, this example is a little bit contrived in tw
 
 ## How to solve Bias - Varience Probelms and Regularization
 ![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/220597997-34dfaf88-d31c-496c-9c23-451a7e21f4f6.png" width=60%/>
+  <br>
+  <ins><b> <i>   Reason we need Regularization in Bias Variance problem</i> </b></ins>
+</p>
+
 After having **trained** an **initial model** **first** ask, **does your algorithm have high bias?**
 
 $\Large{\color{Purple}\textit{High Bias (Training data performance) : }}$  If it does have **high bias**, does not even fit in the training set that well, some things you could try would be to try pick a network, such as more hidden layers or more hidden units, or you could train it longer.
