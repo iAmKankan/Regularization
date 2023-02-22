@@ -9,6 +9,16 @@ Making good choices in how you set up your **training**, **development** and **t
 * **_How many hidden units do you want each layer to have?_** 
 * **_What's the learning rates?_** 
 * **_What are the activation functions you want to use for the different layers?_**
+<!---
+$\large{\color{Purple}\textit{l'heure}}$
+-->
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/220533531-373d86bd-d032-4c8f-8f77-c7b049fc029a.png" width=70%/>
+  <br>
+  <ins><b>     Applied ML is a Highly Itarative process  </b></ins>
+</p>
+
 
 When you're starting on a new application, it's almost impossible to correctly guess the right values for all of these, and for other hyperparameter choices, on your first attempt. So in practice applied machine learning is a highly iterative process, in which you often start with an idea, such as you want to build a neural network of a certain number of layers, certain number of hidden units, maybe on certain data sets and so on. And then you just have to code it up and try it by running your code. You run and experiment and you get back a result that tells you how well this particular network, or this particular configuration works. And based on the outcome, you might then refine your ideas and change your choices and maybe keep iterating in order to try to find a better and a better neural network.
 Play video starting at :1:50 and follow transcript1:50
