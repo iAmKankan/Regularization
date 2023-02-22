@@ -82,9 +82,12 @@ $\Large{\color{Purple}\underline{\textbf{Backpropagation: }}}$
 
 $$\Huge{\color{Purple}\mathrm{dw^{[\mathit{l}]} = (\textit{from backprop})}}$$
 
-* Backprop would give us the **partial derivative** of $\large{\color{Purple}\textrm{J}}$ with respect to $\large{\color{Purple}\textrm{w}}$ , $\large{\color{Purple}\frac{\partial J}{\partial w^{[l]}}}$ or really $\large{\color{Purple}\textrm{w}}$ for any given $\large{\color{Purple}\textrm{[l]}}$ . 
+* Backprop would give us the **partial derivative** of $\large{\color{Purple}\textrm{J}}$ with respect to $\large{\color{Purple}\textrm{w}}$ or really $\large{\color{Purple}\textrm{w}}$ for any given $\large{\color{Purple}\textrm{[l]}}$ . Looka like - $\large{\color{Purple}\frac{\partial J}{\partial w^{[l]}}}$
 
-$$\Huge{\color{Purple}\mathrm{w^{[\mathit{l}]} := \mathrm{w^{[\mathit{l}]}} - L\ {dw}^{[\mathit{l}]} }}$$
+$$\Huge{\color{Purple}\mathrm{w^{[\mathit{l}]} := \mathrm{w^{[\mathit{l}]}} - \eta \ {dw}^{[\mathit{l}]} }}$$
 
-* And then you update w[l], as w[l]- the learning rate times d. So this is before we added this extra regularization term to the objective. Now that we've added this regularization term to the objective, what you do is you take dw and you add to it, lambda/m times w. And then you just compute this update, same as before. And it turns out that with this new definition of dw[l], this new dw[l] is still a correct definition of the derivative of your cost function, with respect to your parameters, now that you've added the extra regularization term at the end.
+* And then you update w[l], as w[l]- the learning rate times d. So this is before we added this extra **regularization** term to the objective. 
+* Now that we've added this **regularization** term to the objective, what you do is you take **dw** and you add to it, lambda/m times w.
+*  And then you just compute this update, same as before. 
+*  And it turns out that with this new definition of dw[l], this new dw[l] is still a correct definition of the derivative of your cost function, with respect to your parameters, now that you've added the extra **regularization** term at the end.
 
