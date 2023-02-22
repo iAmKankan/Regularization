@@ -65,7 +65,7 @@ So this **matrix norm**, it turns out is called the **Frobenius norm** of the ma
 
 $$ \Huge{\color{Purple}\mathrm{J(w^{(1)},b^{(1)}, \cdots,w^{(\mathit{L})},b^{(\mathit{L})}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{(i)},y^{(i)})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l}}^L \parallel w^{(\mathit{l})} \parallel^2}}$$
 
-$\large{\color{Purple}\textrm{Frobenius norm (Matrix norm)}}$ [link ↗️](https://github.com/iAmKankan/Mathematics/blob/main/LinearAlgebra/norms.md#frobenius-norm) 
+$\large{\color{Purple}\textrm{Frobenius norm (Matrix norm)}}$ [link ↗️](https://github.com/iAmKankan/Mathematics/blob/main/LinearAlgebra/norms.md#frobenius-norm) **_It just means the sum of square of elements of a matrix_**
 
 $$\Huge{\color{Purple}\mathrm{\parallel w^{(\mathit{l})} \parallel^2_{F} = \Sigma^{n^{\mathit{l}}}_{i=1} \Sigma^{n^{\mathit{l-1}}}_{j=1} \left \( w^{\mathit{l}}_{i,j}\right\)^2}}$$
 
@@ -78,5 +78,13 @@ $${\color{Purple}
 \end{align}
 }$$
 
+$\Large{\color{Purple}\underline{\textbf{Backpropagation: }}}$ 
 
+$$\Huge{\color{Purple}\mathrm{dw^{[\mathit{l}]} = (\textit{from backprop})}}$$
+
+* Backprop would give us the **partial derivative** of $\large{\color{Purple}\textrm{J}}$ with respect to $\large{\color{Purple}\textrm{w}}$ , $\large{\color{Purple}\frac{\partial J}{\partial w^{[l]}}}$ or really $\large{\color{Purple}\textrm{w}}$ for any given $\large{\color{Purple}\textrm{[l]}}$ . 
+
+$$\Huge{\color{Purple}\mathrm{w^{[\mathit{l}]} := \mathrm{w^{[\mathit{l}]}} - L\ {dw}^{[\mathit{l}]} }}$$
+
+* And then you update w[l], as w[l]- the learning rate times d. So this is before we added this extra regularization term to the objective. Now that we've added this regularization term to the objective, what you do is you take dw and you add to it, lambda/m times w. And then you just compute this update, same as before. And it turns out that with this new definition of dw[l], this new dw[l] is still a correct definition of the derivative of your cost function, with respect to your parameters, now that you've added the extra regularization term at the end.
 
