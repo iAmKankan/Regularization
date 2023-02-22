@@ -53,13 +53,21 @@ If you use **L1 regularization**, then w will end up being **sparse**. And what 
 
  Lambda $\large{\color{Purple}\lambda }$ here is called the **regularization parameter** and usually, you set this using your **development set**, or using **dev set** or **cross validation**. When you a variety of values and see what does the best, in terms of trading off between doing well in your training set versus also setting that two normal of your parameters to be small. Which helps prevent **over fitting**. So **lambda** is **another hyper parameter** that you might have to tune. 
 
-$\Large{\color{Purple}\underline{\textbf{Neural Network: }}}$
+$\Large{\color{Purple}\underline{\textbf{Neural Network: }}}$ In a **neural network**, you have a **cost function** that's a function of all of your parameters-
+* $\large{\color{Purple} w^{[1]}, b^{[1]}}$ through $\large{\color{Purple} w^{[L]}, b^{[L]}}$ where capital $\large{\color{Purple} L}$ is the **number of layers** in your **neural network**. 
+* And so the cost function is this, sum of the losses, summed over your $\large{\color{Purple} m}$ training examples.
+*  And says at **regularization**, you add $\large{\color{Purple} \lambda / 2m}$  of sum over all of your parameters $\large{\color{Purple} w}$, 
+* your parameter matrix is $\large{\color{Purple} w}$, of their, that's called the **squared norm**. 
+* Where this $\large{\color{Purple} \parallel w^{(l)} \parallel^2}$ **norm of a matrix**, meaning the **squared norm** is defined as the $\large{\color{Purple} L}$,  **sum of j**, of each of the elements of that matrix, **squared**. 
+* And if you want the indices of this summation. This is sum from i=1 through n[l]. Sum from j=1 through n[l-1], because $\large{\color{Purple} w}$ is $\large{\color{Purple} w: ( n^{l} ,n^{l-1})}$ dimensional matrix, where $\large{\color{Purple} n^{l} ,n^{l-1} }$ these are the number of Hidden units in layers [l-1] in layer l.
+
+So this **matrix norm**, it turns out is called the **Frobenius norm** of the matrix, denoted with a **F** in the subscript. $\large{\color{Purple}\parallel w \parallel^2_{F}}$ or $\large{\color{Purple}\parallel \dot{} \parallel_{F}^2}$
 
 $$ \Huge{\color{Purple}\mathrm{J(w^{(1)},b^{(1)}, \cdots,w^{(\mathit{L})},b^{(\mathit{L})}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{(i)},y^{(i)})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l}}^L \parallel w^{(\mathit{l})} \parallel^2}}$$
 
 $\large{\color{Purple}\textrm{Frobenius norm (Matrix norm)}}$ [link ↗️](https://github.com/iAmKankan/Mathematics/blob/main/LinearAlgebra/norms.md#frobenius-norm) 
 
-$$\Huge{\color{Purple}\mathrm{\parallel w^{(\mathit{l})} \parallel^2 = \Sigma^{n^{\mathit{l}}}_{i=1} \Sigma^{n^{\mathit{l-1}}}_{j=1} \left \( w^{\mathit{l}}_{i,j}\right\)^2}}$$
+$$\Huge{\color{Purple}\mathrm{\parallel w^{(\mathit{l})} \parallel^2_{F} = \Sigma^{n^{\mathit{l}}}_{i=1} \Sigma^{n^{\mathit{l-1}}}_{j=1} \left \( w^{\mathit{l}}_{i,j}\right\)^2}}$$
 
 $${\color{Purple}
 \begin{align}
