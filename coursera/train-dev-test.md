@@ -1,7 +1,3 @@
-## Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
-![light](https://user-images.githubusercontent.com/12748752/141667908-4ec63aed-5cd0-4b35-9a45-3d52fba893b8.png)
-![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
-
 ## Train / Dev / Test sets
 ![deep](https://user-images.githubusercontent.com/12748752/141667909-22520af3-61cf-4cbc-a8f5-f99947c9b10d.png)
 Making good choices in how you set up your **training**, **development** and **test sets** can make a huge difference in helping you quickly find a good high performance neural network. When training a neural network you have to make a lot of decisions, such as -
