@@ -88,6 +88,30 @@ Where it has high bias, because, by being a mostly linear classifier, is just no
 
 In case this seems contrived, well, this example is a little bit contrived in two dimensions, but with very high dimensional inputs. You actually do get things with high bias in some regions and high variance in some regions, and so it is possible to get classifiers like this in high dimensional inputs that seem less contrived.
 
+## How to solve Bias - Varience Probelms and Regularization
+![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
+After having **trained** an **initial model** **first** ask, **does your algorithm have high bias?**
 
+$\Large{\color{Purple}\textit{High Bias (Training data performance) : }}$  If it does have **high bias**, does not even fit in the training set that well, some things you could try would be to try pick a network, such as more hidden layers or more hidden units, or you could train it longer.
+* Choose Bigger network-  more hidden layers ; getting a bigger network almost always helps. 
+* Train it longer
+* Try some more advanced optimization algorithms.               
+* Maybe you can find a new network architecture that's better suited for this problem.
 
+Maybe you can make it work, maybe not. 
 
+$\Large{\color{Purple}\textit{High Varience (Dev set performance) : }}$ Once you reduce **bias** to acceptable amounts then ask, **do you have a variance problem?** 
+* I would look at **dev set performance**.
+* Are you able to **generalize** from a pretty good **training set** performance to having a pretty good **dev set** performance? 
+
+And if you have **high variance**, well, best way to solve a **high variance** problem is to **_get more data_**. But sometimes you can't get more data. 
+* Or you could try **regularization**, to try to **reduce overfitting**. And then also, again, sometimes you just have to try it. 
+* But if you can find a more **appropriate neural network architecture**, sometimes that can reduce your **variance problem** as well, as well as **reduce your bias problem**. 
+
+But how to do that? It's harder to be totally systematic how you do that. But so I try these things and I kind of keep going back, until hopefully you find something with both low bias and low variance, whereupon you would be done. So a couple of points to notice. 
+1. **First** is that, depending on whether you have **high bias** or **high variance**, the set of things you should try could be quite different. So I'll usually use the **training dev set** to try to diagnose if you have a **bias** or **variance problem**, and then use that to select the appropriate subset of things to try. So for example, if you actually have a **high bias** problem, **getting more training data** is actually not going to help.Or at least it's not the most efficient thing to do. So being clear on how much of a bias problem or variance problem or both can help you focus on selecting the most useful things to try. 
+2. **Second**, in the earlier era of machine learning, there used to be a lot of discussion on what is called the **bias variance tradeoff**. And the reason for that was that, for a lot of the things you could try, you could **increase bias** and **reduce variance**, or **reduce bias** and **increase variance**. But back in the **pre-deep learning era**, we didn't have many tools, we didn't have as many tools that **just reduce bias** or that **just reduce variance** without hurting the other one. But in the modern deep learning, big data era, so long as you can keep training a bigger network, and so long as you can keep getting more data, which isn't always the case for either of these, but if that's the case,
+   *  Then getting a **bigger network** almost always just **reduces your bias without necessarily hurting your variance**, so long as you **regularize** appropriately. 
+   *  And **getting more data** pretty much always **reduces your variance and doesn't hurt your bias much**. So what's really happened is that, with these two steps, the ability to **train**, **pick a network**, or **get more data**, we now have tools to **drive down bias** and just **drive down bias**, or **drive down varianc**e and **just drive down variance**, without really hurting the other thing that much. 
+ 
+ And I think this has been one of the big reasons that deep learning has been so useful for **supervised learning**, that there's much less of this **tradeoff** where you have to carefully **balance bias** and **variance**, but sometimes you just have more options for reducing bias or reducing variance without necessarily increasing the other one. And, in fact, you have a well **regularized network**. **Training a bigger network almost never hurts**. And the main cost of training a neural network that's too big is just computational time, so long as you're **regularizing**. 
