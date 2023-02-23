@@ -137,7 +137,7 @@ For **regularization** we add -
 
 $\large Answer:$ 
 
-One piece of intuition is that 
+One piece of **intuition** is that 
 * If you crank your regularization lambda $\large{\color{Purple} \lambda}$  to be **really** **really big**, that'll be really **incentivized** to set the **weight matrices**  $\large{\color{Purple} w}$ to be reasonably close to zero $\large{\color{Purple} w \approx 0}$ . 
 * So a lot of **hidden units** that's basically **zeroing** out. And this will becomes much simplified **neural network** and much **smaller neural network**. In fact, it is almost like a **logistic regression** unit, but stacked multiple layers deep.
 
