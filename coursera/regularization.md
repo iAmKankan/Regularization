@@ -17,9 +17,13 @@ $\large{\color{Purple}\textit{l'heure}}$
 ![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
 If you suspect your **neural network** is **overfitting** your data. That is you have a **high variance** problem, one of the first things you should try per probably
 1.  **Regularization**. 
-2. The other way to get **more training data** that's also quite reliable. 
+2. The other way to get **more training data** that's also quite **reliable**. Sometimes not possible to get more **training data** or it could be **very expensive**.
 
-But you can't always get more **training data**, or it could be **expensive to get more data**. But adding **regularization** will often help to prevent **overfitting**, or to reduce the errors in your network. So let's see how **regularization** works.
+> ### “ Regularization is any modification we make to a learning algorithm that is intended to reduce its generalization error but not its training error.”
+> ${\color{Purple}\textit{-Ian Goodfellow}}$
+
+$\Large \textit{In other words: }$ **regularization** can be used to train models that **generalize** better on unseen data, by preventing the algorithm from overfitting the training dataset.
+
 
 $\Large{\color{Purple}\underline{\textbf{Logistic Regression:}}\ }$ 
 Let's develop these ideas using logistic regression.For logistic regression, you try to **minimize** the cost function $\large{\color{Purple}\textrm{J}}$, which is defined as this **cost function**. Some of your training examples of the **losses** of the individual predictions in the different examples, where you recall that **w** and **b** in the logistic regression, are the parameters. 
