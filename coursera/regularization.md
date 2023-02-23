@@ -121,9 +121,11 @@ So this is why L2 norm regularization is also called weight decay. Because it's 
 
 ## Why Regularization Reduces Overfitting?
 ![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
-Why does regularization help with overfitting? Why does it help with reducing variance problems? 
+### Why does regularization help with overfitting? Why does it help with reducing variance problems? 
 
-Let's assume a large and deep neural network which is currently **overfitting**. 
+$\Large{\color{Purple}\textit{Example \\#1:}}$
+
+Let's assume a **large** and **deep neural network** which is currently **overfitting**. 
 
 $$ \Huge{\color{Purple}\mathrm{J(w^{[\textit{l}]},b^{[\textit{l}]}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{[\textit{i}]},y^{[\textit{i}]})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l=1}}^L \parallel w^{[\mathit{l}]} \parallel^2_F}}$$
 
@@ -149,7 +151,35 @@ We can think of it as zeroing out, or at least reducing, the impact of a lot of 
 
 > ### $\large{\color{Purple} \textrm{ If you have a Smaller Network, that is}\textit{ less prone to Overfitting.}}$
 
+### Why does regularization help with overfitting? Why does it help with reducing variance problems? 
 
+$\Large{\color{Purple}\textit{Example \\#2:}}$ I'm going to assume that we're using the tanh activation function, which looks like this. 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/220956815-00de638b-d9f1-42f3-9c53-438cd2945763.png" width=70%/>
+  <br>
+  <ins><b> tanh  </b></ins>
+</p>
+
+*  $\large{\color{Purple} g(z)= tanh(z)}$ .
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/220969136-9a2682ea-e5ae-49cf-b89e-5def2eecbe7b.png" width=50%/>
+  <br>
+  <ins><b> tanh  </b></ins>
+</p>
+
+* If $\large{\color{Purple} z}$ is quite small and if $\large{\color{Purple} z}$ takes on only a **smallish range of parameters** , maybe around the **red area**.
+* Then you're just using the **linear regime** of the **tanh function**, 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/220971756-774ac4e7-9bee-4292-8048-2ca091e229c5.png" width=50%/>
+  <br>
+  <ins><b> tanh  </b></ins>
+</p>
+
+* If $\large{\color{Purple} z}$ is allowed to wander to **larger values** or **smaller values** like so, that the **activation function** starts to become **less linear**. 
+* So the intuition you might take away from this is that if lambda, the regularization parameter is large, then you have that your parameters will be relatively small, because they are penalized being large in the cost function. And so if the weights, W, are small, then because z is equal to W, right, and then technically, it's plus b. But if W tends to be very small, then z will also be relatively small. And in particular, if z ends up taking relatively small values, just in this little range, then g of z will be roughly linear. So it's as if every layer will be roughly linear, as if it is just linear regression. And we saw in course one that if every layer is linear, then your whole network is just a linear network. And so even a very deep network, with a deep network with a linear activation function is, at the end of the day, only able to compute a linear function. So it's not able to, you know, fit those very, very complicated decision, very non-linear decision boundaries that allow it to, you know, really overfit, right, to data sets, like we saw on the overfitting high variance case on the previous slide, ok? So just to summarize, if the regularization parameters are very large, the parameters W very small, so z will be relatively small, kind of ignoring the effects of b for now, but so z is relatively, so z will be relatively small, or really, I should say it takes on a small range of values. And so the activation function if it's tan h, say, will be relatively linear. And so your whole neural network will be computing something not too far from a big linear function, which is therefore, pretty simple function, rather than a very complex highly non-linear function. And so, is also much less able to overfit, ok? And again, when you implement regularization for yourself in the program exercise, you'll be able to see some of these effects yourself. Before wrapping up our def discussion on regularization, I just want to give you one implementational tip, which is that, when implementing regularization, we took our definition of the cost function J and we actually modified it by adding this extra term that penalizes the weights being too large. And so if you implement gradient descent, one of the steps to debug gradient descent is to plot the cost function J, as a function of the number of elevations of gradient descent, and you want to see that the cost function J decreases monotonically after every elevation of gradient descent. And if you're implementing regularization, then please remember that J now has this new definition. If you plot the old definition of J, just this first term, then you might not see a decrease monotonically. So to debug gradient descent, make sure that you're plotting, you know, this new definition of J that includes this second term as well. Otherwise, you might not see J decrease monotonically on every single elevation. So that's it for L2 regularization, which is actually a regularization technique that I use the most in training deep learning models. In deep learning, there is another sometimes used regularization technique called dropout regularization. Let's take a look at that in the next video.
 
 
 ## References:
