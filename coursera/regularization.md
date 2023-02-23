@@ -35,6 +35,13 @@ $\large Answer:$ It can be proven that **L2** or **Gauss** or **L1** or **Laplac
 
 $\Large{\color{Black}\underline{\textbf{1. Adding a Regularization Term:}}\ }$ 
 
+To calculate the regression coefficients of a logistic regression the negative of the Log Likelihood function, also called the objective function, is minimized. 
+
+**_This first approach_** **penalizes high coefficients** by adding a **regularization term** let say- $\large{\color{Purple}\mathrm{\parallel w \parallel_2}}$ multiplied by a parameter $\large{\color{Purple}\mathrm{\lambda \in \mathbb{R}_+}}$ to the **objective function**.
+
+#### But why should we penalize high coefficients?
+$\large Answer:$ If a **feature** occurs only in **one class** it will be assigned a **very high coefficient** by the logistic regression algorithm. In this case the model will learn all details about the **training set**, probably too perfectly. 
+
 Let's develop these ideas using logistic regression.For logistic regression, you try to **minimize** the cost function $\large{\color{Purple}\textrm{J}}$, which is defined as this **cost function**. Some of your training examples of the **losses** of the individual predictions in the different examples, where you recall that **w** and **b** in the logistic regression, are the parameters. 
 * $\large{\color{Purple}\textrm{w}}$ is $\large{\color{Purple}n_x}$ dimensional **parameter vector**, $\Large{\color{Purple}\mathrm{w \in \mathbb{R}^{n_x}}}$
 * $\large{\color{Purple}\textrm{b}}$ is a **real number**. $\Large{\color{Purple}\mathrm{b \in \mathbb{R}}}$
