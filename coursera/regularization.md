@@ -30,8 +30,6 @@ $\large Answer:$ It can be proven that **L2** or **Gauss** or **L1** or **Laplac
 1. **First approach:** adding a Regularization Term.
 2. **Second approach:** Bayesian view of Regularization.
 
-
-
 $\Large{\color{Black}\mathbf{1. \underline{Adding a Regularization Term:}}\ }$ 
 
 To calculate the **regression coefficients** of a **logistic regression** the negative of the Log Likelihood function, also called the objective function, is minimized. 
@@ -84,7 +82,7 @@ In a **neural network**, you have a **cost function** that's a function of all o
 
 So this **matrix norm**, it turns out is called the **Frobenius norm** of the matrix, denoted with a **F** in the subscript. $\large{\color{Purple}\parallel w \parallel^2_{F}}$ or $\large{\color{Purple}\parallel \dot{} \parallel_{F}^2}$
 
-$$ \Huge{\color{Purple}\mathrm{J(w^{(1)},b^{(1)}, \cdots,w^{(\mathit{L})},b^{(\mathit{L})}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{(i)},y^{(i)})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l}}^L \parallel w^{(\mathit{l})} \parallel^2}}$$
+$$ \Huge{\color{Purple}\mathrm{J(w^{(1)},b^{(1)}, \cdots,w^{(\mathit{L})},b^{(\mathit{L})}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{(i)},y^{(i)})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l=1}}^L \parallel w^{(\mathit{l})} \parallel^2}}$$
 
 $\large{\color{Purple}\textrm{Frobenius norm (Matrix norm)}}$ [link ↗️](https://github.com/iAmKankan/Mathematics/blob/main/LinearAlgebra/norms.md#frobenius-norm) **_It just means the sum of square of elements of a matrix_**
 
@@ -123,6 +121,33 @@ So this is why L2 norm regularization is also called weight decay. Because it's 
 
 ## Why Regularization Reduces Overfitting?
 ![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
+Why does regularization help with overfitting? Why does it help with reducing variance problems? 
+
+Let's assume a large and deep neural network which is currently **overfitting**. 
+
+$$ \Huge{\color{Purple}\mathrm{J(w^{[\textit{l}]},b^{[\textit{l}]}) = \frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{[\textit{i}]},y^{[\textit{i}]})}} {\color{Cyan} + \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l=1}}^L \parallel w^{[\mathit{l}]} \parallel^2_F}}$$
+
+
+So you have some **cost function**- $\large\left \[{\color{Purple}\mathrm{J(w^{[\textit{l}]},b^{[\textit{l}]})}} \right \]$  equals **sum of the losses**  $\large\left \[ {\color{Purple}\mathrm{\frac{1}{m} \Sigma^m_{i=1} L (\hat{y}^{[\textit{i}]},y^{[\textit{i}]})}} \right \]$ . 
+
+For **regularization** we add -
+* We add this extra term $\large\left \[{\color{Purple}  \mathrm{\frac{\lambda}{2m}\Sigma_{\mathit{l=1}}^L \parallel w^{[\mathit{l}]} \parallel^2_F}} \right \]$ that **penalizes the weight matrices from being too large**. that is the **Frobenius norm**. 
+
+#### So why is it that *shrinking* the *L2 norm* or the *Frobenius norm* with the *parameters* might cause *less overfitting*? 
+
+$\large Answer:$ 
+
+One piece of intuition is that 
+* If you crank your regularization lambda $\large{\color{Purple} \lambda}$  to be **really** **really big**, that'll be really **incentivized** to set the **weight matrices**  $\large{\color{Purple} w}$ to be reasonably close to zero $\large{\color{Purple} w \approx 0}$ . 
+* So a lot of **hidden units** that's basically **zeroing** out. And this will becomes much simplified **neural network** and much **smaller neural network**. In fact, it is almost like a **logistic regression** unit, but stacked multiple layers deep.
+
+And so that will take you from this **overfitting case**, much from **High varience** to closer to the  **high bias** case. But, hopefully, there'll be an intermediate value of **lambda** that results in the result closer to this "**just right**" case in the middle. 
+
+But cranking up **lambda** $\large{\color{Purple} \lambda}$ to be really big, it'll set $\large{\color{Purple} w}$ close to zero $\large{\color{Purple} w \approx 0}$ , which, in practice, this isn't actually what happens. 
+
+We can think of it as zeroing out, or at least reducing, the impact of a lot of the hidden units, so you end up with what might feel like a **simpler network**, that gets closer and closer as if you're just using logistic regression. The intuition of completely **zeroing** out a bunch of hidden units isn't quite right. It turns out that what actually happens is it'll still use all the hidden units, but each of them would just have a much smaller effect. But you do end up with a **simpler network**.
+
+> ### $\large{\color{Purple} \textrm{ If you have a Smaller Network, that is}\textit{ less prone to Overfitting.}}$
 
 
 
