@@ -33,9 +33,9 @@ $\large Answer:$ It can be proven that **L2** or **Gauss** or **L1** or **Laplac
 
 
 
-$\Large{\color{Black}\underline{\textbf{1. Adding a Regularization Term:}}\ }$ 
+$\Large{\color{Black}\mathbf{1. \underline{Adding a Regularization Term:}}\ }$ 
 
-To calculate the regression coefficients of a logistic regression the negative of the Log Likelihood function, also called the objective function, is minimized. 
+To calculate the **regression coefficients** of a **logistic regression** the negative of the Log Likelihood function, also called the objective function, is minimized. 
 
 **_This first approach_** **penalizes high coefficients** by adding a **regularization term** let say- $\large{\color{Purple}\mathrm{\parallel w \parallel_2}}$ multiplied by a parameter $\large{\color{Purple}\mathrm{\lambda \in \mathbb{R}_+}}$ to the **objective function**.
 
