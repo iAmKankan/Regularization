@@ -2,7 +2,6 @@
 ![light](https://user-images.githubusercontent.com/12748752/217685784-cbb25d67-8d84-47c2-89d1-b9737433fa4d.png)
 ![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
 
-
 <!---
 $\large{\color{Purple}\textit{l'heure}}$
 
@@ -100,7 +99,7 @@ $${\color{Purple}
 \end{align}
 }$$
 
-$\Large{\color{Purple}\underline{\textbf{Backpropagation: }}}$ 
+### ⚛️ $\Large{\color{Purple}\underline{\textbf{Backpropagation: }}}$ 
 
 $$\Huge{\color{Purple}\mathrm{dw^{[\mathit{l}]} = (\textit{from backprop})}}$$
 
@@ -121,6 +120,11 @@ And it's for this reason that L2 regularization is sometimes also called weight 
 
 $\large{\color{Purple}\textit{Weight Decay \\# : }}$
 So this is why L2 norm regularization is also called weight decay. Because it's just like the ordinally gradient descent, where you update w by subtracting alpha times the original gradient you got from backprop. But now you're also multiplying w by this thing, which is a little bit less than 1. So the alternative name for L2 regularization is weight decay. I'm not really going to use that name, but the intuition for it's called weight decay is that this first term here, is equal to this. So you're just multiplying the weight metrics by a number slightly less than 1. So that's how you implement L2 regularization in neural network.
+
+## Why Regularization Reduces Overfitting?
+![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
+
+
 
 
 ## References:
