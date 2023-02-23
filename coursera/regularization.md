@@ -25,7 +25,16 @@ If you suspect your **neural network** is **overfitting** your data. That is you
 $\Large \textit{In other words: }$ **regularization** can be used to train models that **generalize** better on unseen data, by preventing the algorithm from overfitting the training dataset.
 
 
-$\Large{\color{Purple}\underline{\textbf{Logistic Regression:}}\ }$ 
+### ⚛️ $\Large{\color{Purple}\underline{\textbf{Logistic Regression:}}\ }$ 
+### So how can we modify the _logistic regression_ algorithm to reduce the generalization error?
+$\large Answer:$ It can be proven that **L2** or **Gauss** or **L1** or **Laplace** regularization have an equivalent impact on the algorithm. There are two approaches to attain the regularization effect.
+1. **First approach:** adding a regularization term
+2. **Second approach:** Bayesian view of regularization
+
+
+
+$\Large{\color{Black}\underline{\textbf{1. Adding a Regularization Term:}}\ }$ 
+
 Let's develop these ideas using logistic regression.For logistic regression, you try to **minimize** the cost function $\large{\color{Purple}\textrm{J}}$, which is defined as this **cost function**. Some of your training examples of the **losses** of the individual predictions in the different examples, where you recall that **w** and **b** in the logistic regression, are the parameters. 
 * $\large{\color{Purple}\textrm{w}}$ is $\large{\color{Purple}n_x}$ dimensional **parameter vector**, $\Large{\color{Purple}\mathrm{w \in \mathbb{R}^{n_x}}}$
 * $\large{\color{Purple}\textrm{b}}$ is a **real number**. $\Large{\color{Purple}\mathrm{b \in \mathbb{R}}}$
@@ -57,7 +66,9 @@ If you use **L1 regularization**, then w will end up being **sparse**. And what 
 
  Lambda $\large{\color{Purple}\lambda }$ here is called the **regularization parameter** and usually, you set this using your **development set**, or using **dev set** or **cross validation**. When you a variety of values and see what does the best, in terms of trading off between doing well in your training set versus also setting that two normal of your parameters to be small. Which helps prevent **over fitting**. So **lambda** is **another hyper parameter** that you might have to tune. 
 
-$\Large{\color{Purple}\underline{\textbf{Neural Network: }}}$ In a **neural network**, you have a **cost function** that's a function of all of your parameters-
+### ⚛️ $\Large{\color{Purple}\underline{\textbf{Neural Network: }}}$ 
+
+In a **neural network**, you have a **cost function** that's a function of all of your parameters-
 * $\large{\color{Purple} w^{[1]}, b^{[1]}}$ through $\large{\color{Purple} w^{[L]}, b^{[L]}}$ where capital $\large{\color{Purple} L}$ is the **number of layers** in your **neural network**. 
 * And so the cost function is this, sum of the losses, summed over your $\large{\color{Purple} m}$ training examples.
 *  And says at **regularization**, you add $\large{\color{Purple} \lambda / 2m}$  of sum over all of your parameters $\large{\color{Purple} w}$, 
