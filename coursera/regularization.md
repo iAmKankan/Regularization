@@ -103,3 +103,9 @@ And it's for this reason that L2 regularization is sometimes also called weight 
 
 $\large{\color{Purple}\textit{Weight Decay \\# : }}$
 So this is why L2 norm regularization is also called weight decay. Because it's just like the ordinally gradient descent, where you update w by subtracting alpha times the original gradient you got from backprop. But now you're also multiplying w by this thing, which is a little bit less than 1. So the alternative name for L2 regularization is weight decay. I'm not really going to use that name, but the intuition for it's called weight decay is that this first term here, is equal to this. So you're just multiplying the weight metrics by a number slightly less than 1. So that's how you implement L2 regularization in neural network.
+
+
+## References:
+![deep](https://user-images.githubusercontent.com/12748752/217685787-3c74eedd-9626-42ff-bab4-5e6ff825a9a4.png)
+* [KNIME](https://www.knime.com/blog/regularization-for-logistic-regression-l1-l2-gauss-or-laplace)
+* [Coursera](https://www.coursera.org/learn/deep-neural-network?specialization=deep-learning)
