@@ -27,10 +27,10 @@ $\Large \textit{In other words: }$ **regularization** can be used to train model
 ### ⚛️ $\Large{\color{Purple}\underline{\textbf{Logistic Regression:}}\ }$ 
 ### So how can we modify the _logistic regression_ algorithm to reduce the generalization error?
 $\large Answer:$ It can be proven that **L2** or **Gauss** or **L1** or **Laplace** regularization have an equivalent impact on the algorithm. There are two approaches to attain the regularization effect.
-1. **First approach:** adding a Regularization Term.
+1. **First approach:** Adding a Regularization Term.
 2. **Second approach:** Bayesian view of Regularization.
 
-$\Large{\color{Black}\mathbf{1. \underline{Adding a Regularization Term:}}\ }$ 
+$\Large{\color{Black}\textbf{1. }\underline{\textbf{Adding a Regularization Term:}}\ }$ 
 
 To calculate the **regression coefficients** of a **logistic regression** the negative of the Log Likelihood function, also called the objective function, is minimized. 
 
