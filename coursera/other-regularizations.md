@@ -74,6 +74,12 @@ So what early stopping does is by stopping **halfway** you have only a **mid-siz
 
 $\large \textrm{Down side of Early stopping: }$ 
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12748752/221178537-cd344ef7-3cdd-42ed-90b6-36287e334b8e.png" width=70%/>
+  <br>
+  <ins><b> Early stopping  </b></ins>
+</p>
+
 The main downside of early stopping is that this couples these two tasks. So you no longer can work on these two problems independently, because by **stopping gradient decent early**, you're sort of breaking whatever you're doing to optimize cost function J, because now you're not doing a great job reducing the cost function J. You've sort of not done that that well. And then you also simultaneously trying to not over fit. So instead of using different tools to solve the two problems, you're using one that kind of mixes the two. And this just makes the set of things you could try are more complicated to think about
 
 $\large Orthogonalization :$
