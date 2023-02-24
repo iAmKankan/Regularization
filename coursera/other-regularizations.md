@@ -82,7 +82,7 @@ $\large \textrm{Down side of Early stopping: }$
 
 The main downside of early stopping is that this couples these two tasks. So you no longer can work on these two problems independently, because by **stopping gradient decent early**, you're sort of breaking whatever you're doing to optimize cost function J, because now you're not doing a great job reducing the cost function J. You've sort of not done that that well. And then you also simultaneously trying to not over fit. So instead of using different tools to solve the two problems, you're using one that kind of mixes the two. And this just makes the set of things you could try are more complicated to think about
 
-$\large Orthogonalization :$
+$\large \underline{Orthogonalization :}$
 
 Machine learning process comprising several different steps.
 1. One, is that you want an algorithm to **optimize the cost function** $\large{\color{Purple}\textit{J}}$ and we have various tools to do that, such as **Gradient Descent** , **momentum** and **RMSprop** and **Adam** and so on. 
