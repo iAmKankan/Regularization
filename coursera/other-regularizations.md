@@ -79,7 +79,7 @@ The main downside of early stopping is that this couples these two tasks. So you
 $\large Orthogonalization :$
 
 Machine learning process comprising several different steps.
-1. One, is that you want an algorithm to **optimize the cost function** $\large{\color{Purple}\textit{J}}$ and we have various tools to do that, such as gradient decent, like **momentum** and **RMS prop** and **Atom** and so on. 
+1. One, is that you want an algorithm to **optimize the cost function** $\large{\color{Purple}\textit{J}}$ and we have various tools to do that, such as **Gradient Descent** , **momentum** and **RMSprop** and **Adam** and so on. 
 2. But after **optimizing** the **cost function** $\large{\color{Purple}\textit{J}}$ , you also wanted to not **over-fit**. And we have some tools to do that such as your **regularization**, **getting more data** and so on. 
  * Now in machine learning, we already have so many **hyper-parameters**. It's already very complicated to choose among the space of possible algorithms. 
  * And so I find machine learning easier to think about when you have one set of tools for **optimizing** the **cost function** $\large{\color{Purple}\textit{J}}$ , and when you're focusing on **authorizing** the **cost function** $\large{\color{Purple}\textit{J}}$. 
