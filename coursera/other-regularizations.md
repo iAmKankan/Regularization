@@ -92,6 +92,3 @@ Machine learning process comprising several different steps.
  * All you care about is finding **w** and **b**, so that **J(w,b)** is as **small as possible**.
  *  You just don't think about anything else other than reducing this. And then it's completely separate task to not over fit, in other words, to reduce variance. And when you're doing that, you have a separate set of tools for doing it. 
  *  And this principle is sometimes called **orthogonalization**. And there's this idea, that you want to be able to think about one task at a time.
-
-
-$\Large {\color{Purple}1.\underline{\textrm{Data Augmentation: }}}$
