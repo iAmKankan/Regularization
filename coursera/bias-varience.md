@@ -23,9 +23,9 @@ $\large{\color{Purple}\textit{l'heure}}$
 
 Let's say the data set that looks like this. 
 
-$\Large\textrm{Left most pic: }$ If you fit a straight line to the data, maybe get a **logistic regression** fit to that. This is not a very good fit to the data. And so this is class of a **high bias**, what we say that this is **underfitting the data**. 
+$\Large{\color{blue}\textrm{Left most pic: }}$ If you fit a straight line to the data, maybe get a **logistic regression** fit to that. This is not a very good fit to the data. And so this is class of a **high bias**, what we say that this is **underfitting the data**. 
 
-$\Large\textrm{Right most pic: }$
+$\Large{\color{blue}\textrm{Right most pic: }}$
 On the opposite end, if you fit an incredibly complex classifier, maybe deep neural network, or neural network with all the hidden units, maybe you can fit the data perfectly, but that doesn't look like a great fit either. So there's a classifier of high variance and this is **overfitting the data**. 
 
 And there might be some classifier in between, with a medium level of complexity, that maybe fits it correctly like that. That looks like a much more reasonable fit to the data, so we call that just right. It's somewhere in between. 
