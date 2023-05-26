@@ -40,7 +40,7 @@ In high dimensional problems, you can't plot the data and visualize division bou
 
 Example of **cat picture classification**: where $\large{\color{Purple}\textit{Y=1}}$ is a **positive example** and $\large{\color{Purple}\textit{Y=0}}$ is a **negative example**, the two key numbers to look at to understand **bias** and **variance** will be **the train set error** and **the dev set** or **the development set error**. 
 
-$\large{\color{Purple}\textit{Example \\#1: }}$ So let's say, your **training set error** is **1%** and your **dev set error** is **11%**. 
+$\Large{\color{Purple}\textit{Example \\#1: }}$ So let's say, your **training set error** is **1%** and your **dev set error** is **11%**. 
 * So in this example, you're **doing very well on the training set**, 
 * But you're **doing relatively poorly on the development set**.
 * So this looks like you might have **overfit the training set**, that somehow you're **not generalizing well**, to this whole **cross-validation set** in the development set.
@@ -48,18 +48,18 @@ $\large{\color{Purple}\textit{Example \\#1: }}$ So let's say, your **training se
 
 So by looking at the training set error and the development set error, you would be able to render a diagnosis of **your algorithm having high variance**.
 
-$\large{\color{Purple}\textit{Example \\#2: }}$ Now, let's say, that you measure your **training set** and your **dev set error**, and you get a different result. Let's say, that your **training set error is 15%** and your **dev set error is 16%**. 
+$\Large{\color{Purple}\textit{Example \\#2: }}$ Now, let's say, that you measure your **training set** and your **dev set error**, and you get a different result. Let's say, that your **training set error is 15%** and your **dev set error is 16%**. 
 * In this case, assuming that humans achieve roughly 0% error, that humans can look at these pictures and just tell if it's cat or not, then it looks like **the algorithm is not even doing very well** on **the training set**. 
 * So if it's not even fitting the training data seam that well, then this is **underfitting the data**. And so this **algorithm has high bias**. 
 * But in contrast, this actually **generalizing** at a **reasonable level** to the **dev set**, whereas performance in the **dev set** is only **1%** worse than performance in the **training set**. 
 * So this algorithm has a problem of **high bias**, because it was not even fitting the **training set**. Well, this is similar to the leftmost plots we had on the previous slide.
 
-$\large{\color{Purple}\textit{Example \\#3: }}$ Now, here's another example. Let's say that you have **15%** **training set error**, so that's **pretty high bias**, but when you evaluate to the **dev set** it does even worse, maybe it does **30%** 
+$\Large{\color{Purple}\textit{Example \\#3: }}$ Now, here's another example. Let's say that you have **15%** **training set error**, so that's **pretty high bias**, but when you evaluate to the **dev set** it does even worse, maybe it does **30%** 
 * In this case, I would diagnose this algorithm as having **high bias**, because it's not doing that well on the **training set**, and **high variance**. 
 
 So this has really the worst of both worlds.
 
-$\large{\color{Purple}\textit{Example \\#4: }}$ If you have **0.5** **training set error**, and **1% dev set error**.
+$\Large{\color{Purple}\textit{Example \\#4: }}$ If you have **0.5** **training set error**, and **1% dev set error**.
 * That you have a **cat classifier** with only **1%**, than just we have **low bias** and **low variance**. 
 
 This analysis is predicated on the assumption, that human level performance gets nearly **0%** error or, more generally, that the **optimal error**, sometimes called **bayes error**, so the **bayesian optimal error nearly 0%**. 
